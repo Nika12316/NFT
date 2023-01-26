@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D192C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.container{
+    width: 350px;
+    border-radius: 15px;
+    padding: 24px;
+    background-color: #15263F;
+    overflow: hidden;
+    position: relative;
+}
+.main{
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h1{
+    width: 302px;
+    height: 28px;
+    padding-top: 24px;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: white;
+    transition: 0.4s ease;
+
+}
+h1:hover{
+    cursor: pointer;
+    color: #00FFF8;
+}
+
+.text{
+    width: 302px;
+    height: 52px;
+    line-height: 26px;
+    font-size: 18px;
+    color: #8BACD9;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+
+    padding-top: 35px
+
+}
+.ethereum{
+    transform: translateY(55px);
+}
+.amount{
+    width: 75px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: #00FFF8;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+
+    margin-left: 15px;
+    transform: translateY(33px);
+
+}
+.clock{
+    margin-top: 14px;
+    transform: translateX(205px);
+    
+    
+}
+.time{
+    width: 73px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: #8BACD9;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+
+    transform: translateX(230px);
+    margin-top: -23px;
+    
+
+}
+hr{
+    height: 1px;
+    border: 0;
+    background: #2E405A;
+
+    margin-top: 24px;
+}
+.avatar{
+    width: 33px;
+    height: 33px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    margin-top: 16px; 
+}
+.last-text1{
+    width: 81px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: #8BACD9;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+
+    transform: translateX(50px);
+    margin-top: -30px;
+
+
+}
+.last-text2{
+    width: 93px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+
+    transform: translateX(135px);
+    margin-top: -19px;
+    transition: 0.4s ease;
+
+}
+.last-text2:hover{
+    cursor: pointer;
+    color: #00FFF8;
+}
+.view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+}
+.overlay-container{
+    position: relative;
+}
+.overlay-container:hover .view{
+    display: block;
+    opacity: 100%;
+    
+}
+.overlay{
+    background-color:hsl(178, 100%, 50%);
+    width: 100%;
+    height: 302px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+    border-radius: 8px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.overlay-container:hover .overlay{
+    opacity: 50%;
+}
